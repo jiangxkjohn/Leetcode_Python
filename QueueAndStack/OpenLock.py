@@ -56,7 +56,6 @@ class Solution:
         if "0000" in  self.deadends:
             return -1
         while not self.isEmpty():
-            
             if self.next_node(self.Front()):
                 return self.times + 1
             if self.mark == self.Front():
