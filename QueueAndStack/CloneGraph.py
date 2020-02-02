@@ -18,7 +18,5 @@ class Solution:
             lookup[node] = clone
             for n in node.neighbors:
                 clone.neighbors.append(dfs(n))
-            
             return clone
-
         return dfs(node)
